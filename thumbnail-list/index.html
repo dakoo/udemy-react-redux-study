@@ -12,7 +12,6 @@
 	</div>
 </body>
 <script type="text/jsx">
-	//Define a 'class'
 	var Badge = React.createClass({
 		// this.props // {}
 		render: function(){
@@ -22,10 +21,9 @@
 		}
 	});
 
-
 	var Thumbnail = React.createClass({
 		render : function(){
-			return    <div className="col-sm-6">
+			return    <div className="col-sm-6 col-md-4">
 	<div className="thumbnail">
       <img src={this.props.imageUrl}/>
       <div className="caption">
@@ -67,9 +65,6 @@
       imageUrl: 'http://brunch.io/images/others/gulp.png'
     }]
   };
-	//React, please render this class
 	var element = React.createElement(Thumbnaillist, options);
-
-	//React, after you render this class, please place it in my body tag	
 	React.render(element, document.querySelector('.target'));
 </script>
